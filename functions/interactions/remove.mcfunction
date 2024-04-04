@@ -1,0 +1,2 @@
+
+kill @e[type=interaction]
