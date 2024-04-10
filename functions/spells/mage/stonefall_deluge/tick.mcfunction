@@ -24,7 +24,7 @@ execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] store result score @s 
 execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] store result score @s random run random value 1..11
 execute as @e[tag=stonefall_deluge_vfx,scores={random=1..6}] at @s run tag @s add spawnProjectile
 execute as @e[tag=stonefall_deluge_vfx,scores={random=1..6}] at @s run tag @s add blockDisplay
-function code:misc/spawn_projectile
+execute if entity @e[tag=stonefall_deluge_vfx,scores={random=1..6}] run function code:misc/spawn_projectile
 
 execute as @e[tag=stonefall_deluge_vfx,scores={random=1..6}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add stonefall_deluge_stone
 

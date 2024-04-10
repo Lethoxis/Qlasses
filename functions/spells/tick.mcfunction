@@ -17,6 +17,7 @@ execute if entity @a[tag=interstellar_comet,nbt={SelectedItemSlot:0},scores={lc=
 
 execute if entity @a[tag=wave,nbt={SelectedItemSlot:0},scores={lc=1..}] run function code:spells/mage/wave/cast
 execute if entity @a[tag=splashback,nbt={SelectedItemSlot:0},scores={lc=1..}] run function code:spells/mage/splashback/cast
+execute if entity @a[tag=siphon,nbt={SelectedItemSlot:0},scores={lc=1..}] run function code:spells/mage/siphon/cast
 execute if entity @a[tag=tsunami,nbt={SelectedItemSlot:0},scores={lc=1..}] run function code:spells/mage/tsunami/cast
 
 execute if entity @a[tag=jolt,nbt={SelectedItemSlot:0},scores={lc=1..}] run function code:spells/mage/jolt/cast
@@ -46,6 +47,8 @@ execute if entity @e[tag=projectile,tag=interstellar_comet,tag=going] run functi
 
 execute if entity @e[tag=projectile,tag=wave] run function code:spells/mage/wave/tick
 execute if entity @e[tag=projectile,tag=splashback] run function code:spells/mage/splashback/tick
+execute if entity @e[tag=projectile,tag=siphon] run function code:spells/mage/siphon/tick
+execute if entity @e[tag=projectile,tag=siphon_effect] run function code:spells/mage/siphon/tick_effect
 execute if entity @e[tag=projectile,tag=tsunami,tag=!going] run function code:spells/mage/tsunami/channel
 execute if entity @e[tag=projectile,tag=tsunami,tag=going] run function code:spells/mage/tsunami/tick
 

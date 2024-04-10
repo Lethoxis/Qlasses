@@ -1,6 +1,5 @@
 
 tag @a[tag=stonefall_deluge,scores={lc=1..}] add spawnProjectile
-tag @a[tag=stonefall_deluge,scores={lc=1..}] add itemDisplay
 function code:misc/player_spawn_projectile
 execute as @a[tag=stonefall_deluge,scores={lc=1..}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add stonefall_deluge
 execute as @a[tag=stonefall_deluge,scores={lc=1..}] at @s run summon marker ~ ~ ~ {Tags:["passenger","stonefall_deluge_vfx","new","hasLife"]}

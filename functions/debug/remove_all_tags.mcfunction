@@ -8,8 +8,9 @@ tag @s remove amethyst_storm
 tag @s remove amethyst_heart
 
 tag @s remove wave
-tag @s remove tsunami
 tag @s remove splashback
+tag @s remove siphon
+tag @s remove tsunami
 
 tag @s remove geode_bomb
 tag @s remove stonefall_deluge
