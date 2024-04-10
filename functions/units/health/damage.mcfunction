@@ -1,5 +1,5 @@
 
-execute as @e[scores={dmg=1..}] on passengers if entity @s[tag=healthbar] at @s run summon text_display ~ ~ ~ {Tags:["damage","hasLife","new"],billboard:"center",background:0b,shadow:1b,text:'["",{"score":{"name":"@e[scores={dmg=1..},sort=nearest,limit=1]","objective":"dmg"},"color":"#BF0000"}]'}
+execute unless entity @a[tag=hideDamage] as @e[scores={dmg=1..}] on passengers if entity @s[tag=healthbar] at @s run summon text_display ~ ~ ~ {Tags:["damage","hasLife","new"],billboard:"center",background:0b,shadow:1b,text:'["",{"score":{"name":"@e[scores={dmg=1..},sort=nearest,limit=1]","objective":"dmg"},"color":"#BF0000"}]'}
 
 #################### Random text damage movement
 scoreboard players add #damagepos value 1

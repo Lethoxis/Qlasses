@@ -1,6 +1,6 @@
 
-execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .8 .7 .8 .5 ^ ^ ^ .02 .02 .02 0 2
-execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .8 .7 .8 .5 ^ ^ ^-.5 .02 .02 .02 0 2
+execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .6 -1 .7 .5 ^ ^ ^ .02 .02 .02 0 2
+execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .6 -1 .7 .5 ^ ^ ^-.5 .02 .02 .02 0 2
 execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run tp @s ^ ^ ^1
 
 

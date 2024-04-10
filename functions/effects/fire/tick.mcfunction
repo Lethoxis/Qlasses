@@ -9,6 +9,8 @@ execute if score #fireDmg value matches 0 run function code:units/health/damage
 
 
 execute as @e[tag=effect,tag=fire,scores={life=-1..}] on vehicle run data merge entity @s {HasVisualFire:0b}
+execute as @e[tag=effect,tag=fire,scores={life=-1..}] on vehicle run tag @s remove blaze_rampart_burning
+
 execute as @e[tag=effect,tag=fire,scores={life=..-2}] on vehicle run data merge entity @s {HasVisualFire:1b}
 
 

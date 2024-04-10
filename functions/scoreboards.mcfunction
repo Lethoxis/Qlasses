@@ -1,6 +1,7 @@
 
 scoreboard objectives add id dummy "ID"
 scoreboard objectives add value dummy "Value"
+scoreboard objectives add random dummy "Random"
 
 ################################# Health #################################
 scoreboard objectives add mhp dummy "Max HP"
@@ -10,6 +11,7 @@ scoreboard objectives add dmg dummy "Damage"
 
 
 ################################# Effects #################################
+scoreboard objectives add channel dummy "Channel"
 scoreboard objectives add effDmg dummy "Effect damage"
 
 

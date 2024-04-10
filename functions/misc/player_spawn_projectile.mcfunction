@@ -7,7 +7,7 @@ execute as @e[tag=spawnProjectile,tag=!itemDisplay,tag=!blockDisplay] at @s run 
 execute as @e[tag=spawnProjectile,tag=itemDisplay] at @s run summon item_display ~ ~ ~ {Invulnerable:1b,Tags:["new","projectile","hasLife"]}
 execute as @e[tag=spawnProjectile,tag=blockDisplay] at @s run summon block_display ~ ~ ~ {Invulnerable:1b,Tags:["new","projectile","hasLife"]}
 
-execute as @e[tag=spawnProjectile] at @s run tp @e[tag=projectile,tag=new,sort=nearest,limit=1] ~ ~1.3 ~ ~ ~
+execute as @e[tag=spawnProjectile] at @s run tp @e[tag=projectile,tag=new,sort=nearest,limit=1] ~ ~1.2 ~ ~ ~
 execute as @e[tag=spawnProjectile] at @s run scoreboard players operation @e[tag=projectile,tag=new,sort=nearest,limit=1] id = @s id
 
 scoreboard players set @e[tag=projectile,tag=new] life 0
