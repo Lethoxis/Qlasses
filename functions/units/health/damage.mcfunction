@@ -9,12 +9,12 @@ tag @e[tag=damage,tag=new] remove new
 
 
 #################### Damage
-execute as @e[scores={dmg=1..}] if score @s hp < @s dmg run scoreboard players operation @s dmg = @s hp
-execute as @e[scores={dmg=1..}] run scoreboard players operation @s hp -= @s dmg
+execute as @e[tag=!projectile,scores={dmg=1..}] if score @s hp < @s dmg run scoreboard players operation @s dmg = @s hp
+execute as @e[tag=!projectile,scores={dmg=1..}] run scoreboard players operation @s hp -= @s dmg
 
 execute if entity @e[scores={hp=..0}] run function code:units/health/die
 
 function code:units/health/healthbar
 
-scoreboard players set @e[scores={dmg=1..}] dmg 0
+scoreboard players set @e[tag=!projectile,scores={dmg=1..}] dmg 0
 

@@ -18,4 +18,3 @@ execute as @e[tag=projectile,tag=interstellar_comet,scores={life=-1}] at @s run 
 
 execute as @e[tag=projectile,tag=interstellar_comet,scores={life=-1}] at @s run tp @s ~ ~ ~ ~ 0
 execute as @e[tag=projectile,tag=interstellar_comet,scores={life=-1}] at @s run tag @s add going
-execute as @e[tag=projectile,tag=interstellar_comet,scores={life=-1}] at @s run tag @a[tag=interstellar_comet,sort=nearest,limit=1] remove channeling

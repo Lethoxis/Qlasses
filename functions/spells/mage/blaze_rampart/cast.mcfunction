@@ -1,10 +1,10 @@
 
-tag @a[tag=blaze_rampart,scores={lc=1..}] add spawnProjectile
+tag @a[scores={cast=3}] add spawnProjectile
 function code:misc/player_spawn_projectile
-execute as @a[tag=blaze_rampart,scores={lc=1..}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add blaze_rampart
-execute as @a[tag=blaze_rampart,scores={lc=1..}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add central
+execute as @a[scores={cast=3}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add blaze_rampart
+execute as @a[scores={cast=3}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add central
 
-execute as @a[tag=blaze_rampart,scores={lc=1..}] at @s run playsound entity.blaze.shoot ambient @a ~ ~ ~ .4 0
+execute as @a[scores={cast=3}] at @s run playsound entity.blaze.shoot ambient @a ~ ~ ~ .4 0
 
 
 ############### Place on ground

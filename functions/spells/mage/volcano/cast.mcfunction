@@ -1,7 +1,7 @@
 
-tag @a[tag=volcano,scores={lc=1..}] add spawnProjectile
+tag @a[scores={cast=1}] add spawnProjectile
 function code:misc/player_spawn_projectile
-execute as @a[tag=volcano,scores={lc=1..}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add volcano
+execute as @a[scores={cast=1}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add volcano
 
 
 # Place on ground

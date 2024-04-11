@@ -15,16 +15,17 @@ execute if entity @e[type=text_display,tag=damage] run function code:units/healt
 ################################################# Spells #################################################
 function code:spells/tick
 
+execute as @a[tag=!channeling,scores={lc=1..},nbt={SelectedItemSlot:0}] unless score @s autocd matches 1.. run scoreboard players operation @s cast = @s auto
+execute as @a[tag=!channeling,scores={rc=1..},nbt={SelectedItemSlot:0}] unless score @s spell1cd matches 1.. run scoreboard players operation @s cast = @s spell1
+execute as @a[tag=!channeling,scores={lc=1..},nbt={SelectedItemSlot:1}] unless score @s spell2cd matches 1.. run scoreboard players operation @s cast = @s spell2
+execute as @a[tag=!channeling,scores={rc=1..},nbt={SelectedItemSlot:1}] unless score @s spell3cd matches 1.. run scoreboard players operation @s cast = @s spell3
+execute as @a[tag=!channeling,scores={lc=1..},nbt={SelectedItemSlot:2}] unless score @s spell4cd matches 1.. run scoreboard players operation @s cast = @s spell4
+execute if entity @a[scores={cast=1..}] run function code:spells/cast
+
+
+
 scoreboard players add @e[tag=hasLife] life 1
 kill @e[scores={life=1000..}]
-
-
-
-
-
-################################################# Click #################################################
-scoreboard players set @e[scores={lc=1..}] lc 0
-scoreboard players set @e[scores={rc=1..}] rc 0
 
 
 
