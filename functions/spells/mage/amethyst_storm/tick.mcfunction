@@ -12,10 +12,16 @@ execute if score #amethyst_storm value matches 2.. run scoreboard players set #a
 execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm] at @s run playsound item.armor.equip_diamond ambient @a ~ ~ ~ .8 2
 execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm] at @s run playsound block.amethyst_block.resonate ambient @a ~ ~ ~ 1.2 2
 
+execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm] run store result score @s random run random value 1..5
 execute if score #amethyst_storm value matches 1 run tag @e[tag=projectile,tag=amethyst_storm] add spawnProjectile
 execute if score #amethyst_storm value matches 1 run tag @e[tag=projectile,tag=amethyst_storm] add blockDisplay
 execute if score #amethyst_storm value matches 1 run function code:misc/spawn_projectile
 execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm] at @s run tag @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] add amethyst_storm_shard
+
+execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm,scores={random=1}] at @s run tp @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] ^.3 ^.3 ^
+execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm,scores={random=2}] at @s run tp @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] ^.3 ^-.3 ^
+execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm,scores={random=3}] at @s run tp @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] ^-.3 ^-.3 ^
+execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm,scores={random=4}] at @s run tp @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] ^-.3 ^.3 ^
 execute if score #amethyst_storm value matches 1 as @e[tag=projectile,tag=amethyst_storm] at @s run execute as @e[tag=projectile,tag=!amethyst_storm,scores={life=0},sort=nearest,limit=1] run data merge entity @s {block_state:{Name:"minecraft:medium_amethyst_bud"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.71f,0f,0f,1f],translation:[-0.4f,0.4f,0f],scale:[0.5f,0.5f,0.5f]}}
 
 
