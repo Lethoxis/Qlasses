@@ -62,7 +62,7 @@ kill @e[tag=projectile,tag=splashback_repulse,scores={life=5..}]
 
 ################ Repulse self
 execute as @e[tag=projectile,tag=splashback] at @s positioned ^ ^ ^-.45 run tp @s ~ ~ ~ ~ ~-4
-execute as @e[tag=projectile,tag=splashback] at @s run tp @p[tag=splashback] ~ ~ ~
+execute as @e[tag=projectile,tag=splashback] at @s run tp @p ~ ~ ~
 
 execute as @e[tag=projectile,tag=splashback] at @s run particle dust_color_transition .5 .5 1 1.3 1 1 1 ~ ~.5 ~ .2 .2 .2 0 2
 execute as @e[tag=projectile,tag=splashback] at @s run particle white_smoke ~ ~.5 ~ .2 .2 .2 0 2

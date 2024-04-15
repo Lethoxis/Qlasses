@@ -1,11 +1,11 @@
 
-tag @a[scores={cast=15}] add spawnProjectile
-tag @a[scores={cast=15}] add blockDisplay
+tag @a[scores={cast=105}] add spawnProjectile
+tag @a[scores={cast=105}] add blockDisplay
 function code:misc/player_spawn_projectile
-execute as @a[scores={cast=15}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add earthwall
-execute as @a[scores={cast=15}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add central
+execute as @a[scores={cast=105}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add earthwall
+execute as @a[scores={cast=105}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add central
 
-execute as @a[scores={cast=15}] at @s run playsound entity.blaze.shoot ambient @a ~ ~ ~ .4 0
+execute as @a[scores={cast=105}] at @s run playsound entity.blaze.shoot ambient @a ~ ~ ~ .4 0
 
 
 ############### Place on ground

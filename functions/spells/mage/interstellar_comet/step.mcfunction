@@ -19,9 +19,8 @@ execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s run
 
 
 ##### Hit (enemy or wall)
-execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ if entity @e[tag=enemy,distance=..5] run scoreboard players add @e[tag=enemy,distance=..2] dmg 100
-execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ if entity @e[tag=enemy,distance=..5] run function code:units/health/damage
-execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ if entity @e[tag=enemy,distance=..5] run playsound entity.zombie.attack_wooden_door ambient @a ~ ~ ~ 1.3 .7
+execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ run scoreboard players add @e[tag=enemy,distance=..3] dmg 100
+execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ if entity @e[tag=enemy,distance=..3] run playsound entity.zombie.attack_wooden_door ambient @a ~ ~ ~ 1.3 .7
 execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ positioned ^1 ^ ^ as @e[tag=enemy,distance=..2] rotated as @e[tag=projectile,tag=interstellar_comet,scores={life=0..},sort=nearest,limit=1] run tp @s ^1.7 ^ ^
 execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ positioned ^-1 ^ ^ as @e[tag=enemy,distance=..2] rotated as @e[tag=projectile,tag=interstellar_comet,scores={life=0..},sort=nearest,limit=1] run tp @s ^-1.7 ^ ^
 execute as @e[tag=projectile,tag=interstellar_comet,scores={life=0..}] at @s positioned ~ ~-3.5 ~ at @e[tag=enemy,distance=..2.5] run particle block blackstone ~ ~ ~ .8 .8 .8 1 80 force

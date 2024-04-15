@@ -6,7 +6,7 @@ execute if entity @e[tag=projectile,tag=campfire] run function code:spells/mage/
 execute if entity @e[tag=projectile,tag=blaze_rampart] run function code:spells/mage/blaze_rampart/tick
 execute if entity @e[tag=projectile,tag=pyrotectonics] run function code:spells/mage/pyrotectonics/tick
 execute if entity @e[tag=pyrotectonics_erupt] run function code:spells/mage/pyrotectonics/erupt
-execute if entity @e[tag=emberling] run function code:spells/mage/emberling/erupt
+execute if entity @e[tag=emberling] run function code:spells/mage/emberling/tick
 
 execute if entity @e[tag=projectile,tag=amethyst_shards] run function code:spells/mage/amethyst_shards/tick
 execute if entity @e[tag=projectile,tag=amethyst_storm] run function code:spells/mage/amethyst_storm/tick
@@ -27,9 +27,19 @@ execute if entity @e[tag=projectile,tag=siphon] run function code:spells/mage/si
 execute if entity @e[tag=projectile,tag=siphon_effect] run function code:spells/mage/siphon/tick_effect
 execute if entity @e[tag=projectile,tag=tsunami,tag=!going] run function code:spells/mage/tsunami/channel
 execute if entity @e[tag=projectile,tag=tsunami,tag=going] run function code:spells/mage/tsunami/tick
+execute if entity @e[tag=projectile,tag=geyser] run function code:spells/mage/geyser/tick
+execute if entity @e[tag=projectile,tag=geyser_instance] run function code:spells/mage/geyser/tick_instance
+execute if entity @e[tag=projectile,tag=twinstream] run function code:spells/mage/twinstream/tick
+execute if entity @a[tag=aquabombing] run function code:spells/mage/aquabomb/tick
+execute if entity @e[tag=projectile,tag=life_spring] run function code:spells/mage/life_spring/tick
+execute if entity @e[tag=projectile,tag=life_spring_effect] run function code:spells/mage/life_spring/tick_effect
+execute if entity @e[tag=projectile,tag=bubble_bind] run function code:spells/mage/bubble_bind/tick
+execute if entity @e[tag=projectile,tag=diamond_waters] run function code:spells/mage/diamond_waters/tick
+execute if entity @e[tag=projectile,tag=diamond_waters_instance] run function code:spells/mage/diamond_waters/tick_instance
 
 execute if entity @e[tag=projectile,tag=jolt] run function code:spells/mage/jolt/tick
 execute if entity @e[tag=projectile,tag=thundersurge] run function code:spells/mage/thundersurge/tick
+execute if entity @e[tag=projectile,tag=blitz_dash] run function code:spells/mage/blitz_dash/tick
 
 
 ########################## CD ##########################

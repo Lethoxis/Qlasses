@@ -40,6 +40,19 @@ execute as @e[type=!player,tag=volcano,tag=!placed] at @s unless block ~ ~ ~ air
 execute as @e[type=!player,tag=volcano,tag=!placed] at @s run tp @s ^ ^ ^1
 execute as @e[type=!player,tag=volcano,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+execute as @e[tag=projectile,tag=volcano,tag=!placed,scores={life=0}] at @s if block ~ ~ ~ air run tp @s ~ ~-1 ~
+
 kill @e[type=!player,tag=volcano,tag=!placed]
 
 execute as @e[type=!player,tag=volcano,scores={life=0}] at @s align y run tp @s ~ ~ ~ 0 0
