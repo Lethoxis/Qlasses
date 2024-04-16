@@ -17,6 +17,8 @@ scoreboard objectives add dmg dummy "Damage"
 ################################# Effects #################################
 scoreboard objectives add effDmg dummy "Effect damage"
 
+scoreboard objectives add fire dummy "Fire"
+
 
 ################################# Spells #################################
 scoreboard objectives add cast dummy "Cast"

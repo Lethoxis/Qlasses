@@ -1,18 +1,20 @@
 
 scoreboard players add #fireDmg value 1
-execute if score #fireDmg value matches 4.. run scoreboard players set #fireDmg value 0
+execute if score #fireDmg value matches 6.. run scoreboard players set #fireDmg value 0
 
+scoreboard players remove @e[scores={fire=1..}] fire 1
 
 ####################### Dmg ########################
-execute if score #fireDmg value matches 0 as @e[tag=effect,tag=fire] at @s on vehicle run scoreboard players operation @s dmg += @e[tag=effect,tag=fire,sort=nearest,limit=1] effDmg
+execute if score #fireDmg value matches 0 as @e[scores={fire=1..}] run scoreboard players add @s dmg 1
+execute if score #fireDmg value matches 0 as @e[scores={fire=1..},tag=double_fire] run scoreboard players add @s dmg 1
 execute if score #fireDmg value matches 0 run function code:units/health/damage
 
 
-execute as @e[tag=effect,tag=fire,scores={life=-1..}] on vehicle run data merge entity @s {HasVisualFire:0b}
-execute as @e[tag=effect,tag=fire,scores={life=-1..}] on vehicle run tag @s remove blaze_rampart_burning
-
-execute as @e[tag=effect,tag=fire,scores={life=..-2}] on vehicle run data merge entity @s {HasVisualFire:1b}
+execute if score #fireDmg value matches 0 as @e[scores={fire=1..},tag=double_fire] at @s run particle lava ~ ~.8 ~ .1 1 .1 0 2
 
 
-####################### End ########################
-kill @e[tag=effect,tag=fire,scores={life=-1..}]
+execute as @e[scores={fire=2..}] run data merge entity @s {HasVisualFire:1b}
+
+execute as @e[scores={fire=..1}] run data merge entity @s {HasVisualFire:0b}
+
+

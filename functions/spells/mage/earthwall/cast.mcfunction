@@ -5,8 +5,6 @@ function code:misc/player_spawn_projectile
 execute as @a[scores={cast=105}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add earthwall
 execute as @a[scores={cast=105}] at @s run tag @e[tag=projectile,scores={life=0},sort=nearest,limit=1] add central
 
-execute as @a[scores={cast=105}] at @s run playsound entity.blaze.shoot ambient @a ~ ~ ~ .4 0
-
 
 ############### Place on ground
 execute as @e[tag=projectile,tag=earthwall,tag=!placed,scores={life=0}] at @s run tp @s ^ ^ ^1

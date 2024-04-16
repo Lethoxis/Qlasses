@@ -18,7 +18,7 @@ execute if entity @a[scores={cast=2}] run function code:spells/mage/campfire/cas
 execute if entity @a[scores={cast=3}] run function code:spells/mage/blaze_rampart/cast
 execute if entity @a[scores={cast=4}] run function code:spells/mage/pyrotectonics/cast
 execute if entity @a[scores={cast=5}] run function code:spells/mage/emberling/cast
-execute if entity @a[scores={cast=6}] run function code:spells/mage/shackled_flame/cast
+execute if entity @a[scores={cast=6}] run function code:spells/mage/hellfire_shackles/cast
 
 execute if entity @a[scores={cast=100}] run function code:spells/mage/amethyst_shards/cast
 execute if entity @a[scores={cast=101}] run function code:spells/mage/amethyst_storm/cast

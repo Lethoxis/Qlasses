@@ -35,10 +35,8 @@ execute as @e[tag=projectile,tag=diamond_waters_instance] at @s positioned ^ ^ ^
 tag @e[tag=projectile,tag=diamond_waters_instance,tag=hitwall] add hit
 
 
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s positioned ^ ^-1 ^1 if entity @e[tag=enemy,distance=..1.6] run tag @s add hit
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s positioned ^ ^-1 ^1 run tag @e[tag=enemy,distance=..1.6] add diamond_waters_hit
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s positioned ^ ^-1 ^1 run tag @e[tag=enemy,tag=!diamond_waters_hit,distance=..1.6] add diamond_waters_hit
 
 
 kill @e[tag=projectile,tag=diamond_waters_instance,tag=hitwall]
-tag @e[tag=projectile,tag=diamond_waters_instance,tag=hit] remove hit
 

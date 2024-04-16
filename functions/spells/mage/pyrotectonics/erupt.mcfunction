@@ -1,10 +1,9 @@
 
 #### First proc: dmg
 execute as @e[tag=pyrotectonics_erupt,scores={life=1}] at @s run scoreboard players add @e[tag=enemy,distance=..1.9] dmg 13
+execute as @e[tag=pyrotectonics_erupt,scores={life=1}] at @s run scoreboard players set @e[tag=enemy,distance=..1.9,scores={fire=..200}] fire 200
 execute as @e[tag=pyrotectonics_erupt,scores={life=1}] run function code:units/health/damage
 
-execute as @e[tag=pyrotectonics_erupt,scores={life=1}] at @s as @e[tag=enemy,distance=..1.9] run tag @s add pyrotectonicsHit
-execute if entity @e[tag=pyrotectonicsHit] run function code:spells/mage/pyrotectonics/hitenemy
 
 
 

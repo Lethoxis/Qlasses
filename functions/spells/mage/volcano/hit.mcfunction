@@ -1,10 +1,6 @@
 
 execute as @e[tag=volcano,scores={life=24}] at @s run scoreboard players add @e[tag=enemy,distance=..5] dmg 20
-
-execute as @e[tag=volcano,scores={life=24}] at @s as @e[tag=enemy,distance=..5] run tag @s add volcanoHit
-execute if entity @e[tag=volcanoHit] run function code:spells/mage/volcano/hitenemy
-
-
+execute as @e[tag=volcano,scores={life=24}] at @s run scoreboard players set @e[tag=enemy,distance=..5,scores={fire=..200}] fire 200
 
 
 execute if entity @e[tag=volcano,scores={life=24}] run function code:units/health/damage

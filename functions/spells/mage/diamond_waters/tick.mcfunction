@@ -54,6 +54,18 @@ execute as @e[tag=projectile,tag=diamond_waters,scores={life=48..}] at @s run pl
 
 
 
+##### Dmg
+scoreboard players add @e[tag=diamond_waters_hit] dmg 6
+execute as @e[tag=diamond_waters_hit] at @s run effect give @s slowness 2 1 true
+
+execute as @e[tag=diamond_waters_hit] at @s run particle dust 0 .5 1 1 ~ ~1.5 ~ .4 .8 .4 0 30
+execute as @e[tag=diamond_waters_hit] at @s run playsound entity.player.hurt_drown ambient @a ~ ~ ~ .5 1.2
+
+execute if entity @e[tag=diamond_waters_hit] run function code:units/health/damage
+tag @e[tag=diamond_waters_hit] remove diamond_waters_hit
+
+
+
 ###### Death
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=84}] at @s run tag @a[tag=channeling,sort=nearest,limit=1] remove channeling
 kill @e[tag=projectile,tag=diamond_waters,scores={life=84..}]

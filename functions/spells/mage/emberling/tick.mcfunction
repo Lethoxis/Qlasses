@@ -26,6 +26,7 @@ execute as @e[tag=projectile,tag=emberling] at @s at @e[tag=emberling_target,dis
 execute as @e[tag=projectile,tag=emberling] at @s at @e[tag=emberling_target,distance=..1] run particle flame ~ ~1 ~ .3 .4 .3 0.04 50
 execute as @e[tag=projectile,tag=emberling] at @s if entity @e[tag=emberling_target,distance=..1] run scoreboard players remove @s value 1
 
+execute as @e[tag=projectile,tag=emberling] at @s if entity @e[tag=enemy,tag=emberling_target,distance=..1] run scoreboard players set @e[tag=enemy,tag=emberling_target,distance=..1,scores={fire=..200}] fire 200
 execute as @e[tag=projectile,tag=emberling] at @s if entity @e[tag=enemy,tag=emberling_target,distance=..1] run scoreboard players add @e[tag=enemy,tag=emberling_target,distance=..1] dmg 6
 execute as @e[tag=projectile,tag=emberling] at @s if entity @e[tag=enemy,tag=emberling_target,distance=..1] run function code:units/health/damage
 

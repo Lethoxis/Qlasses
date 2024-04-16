@@ -7,7 +7,7 @@ execute if entity @e[tag=projectile,tag=blaze_rampart] run function code:spells/
 execute if entity @e[tag=projectile,tag=pyrotectonics] run function code:spells/mage/pyrotectonics/tick
 execute if entity @e[tag=pyrotectonics_erupt] run function code:spells/mage/pyrotectonics/erupt
 execute if entity @e[tag=emberling] run function code:spells/mage/emberling/tick
-execute if entity @e[tag=projectile,tag=shackled_flame] run function code:spells/mage/shackled_flame/tick
+execute if entity @e[tag=projectile,tag=hellfire_shackles] run function code:spells/mage/hellfire_shackles/tick
 
 execute if entity @e[tag=projectile,tag=amethyst_shards] run function code:spells/mage/amethyst_shards/tick
 execute if entity @e[tag=projectile,tag=amethyst_storm] run function code:spells/mage/amethyst_storm/tick

@@ -17,14 +17,7 @@ execute as @e[tag=projectile,tag=blaze_rampart,scores={life=90..100}] at @s run 
 
 
 
-execute as @e[tag=projectile,tag=blaze_rampart] at @s as @e[tag=enemy,tag=!blaze_rampart_burning,distance=..2] at @s run summon marker ~ ~ ~ {Tags:["fire","effect","passenger","hasLife","blaze_rampart_effect"]}
-scoreboard players set @e[tag=blaze_rampart_effect] life -30
-scoreboard players set @e[tag=blaze_rampart_effect] effDmg 4
-
-execute as @e[tag=projectile,tag=blaze_rampart] at @s as @e[tag=enemy,tag=!blaze_rampart_burning,distance=..2] at @s run ride @e[tag=blaze_rampart_effect,sort=nearest,limit=1] mount @s
-execute as @e[tag=projectile,tag=blaze_rampart] at @s run tag @e[tag=enemy,tag=!blaze_rampart_burning,distance=..2] add blaze_rampart_burning
-tag @e[tag=blaze_rampart_effect] remove blaze_rampart_effect
-
+execute as @e[tag=projectile,tag=blaze_rampart] at @s run scoreboard players set @e[tag=enemy,tag=!blaze_rampart_burning,distance=..2,scores={fire=..200}] fire 200
 
 ###### Death
 kill @e[tag=projectile,tag=blaze_rampart,scores={life=140..}]
