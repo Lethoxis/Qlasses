@@ -24,6 +24,7 @@ execute if entity @a[scores={cast=0..}] run function code:spells/cast
 
 scoreboard players set @a[scores={lc=1..}] lc 0
 scoreboard players set @a[scores={rc=1..}] rc 0
+scoreboard players set @a[scores={sneak=1..}] sneak 0
 
 
 

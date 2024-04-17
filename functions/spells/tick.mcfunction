@@ -21,6 +21,8 @@ execute if entity @e[tag=projectile,tag=earthwall] run function code:spells/mage
 execute if entity @e[tag=projectile,tag=gemfire_beam] run function code:spells/mage/gemfire_beam/tick
 execute if entity @e[tag=projectile,tag=interstellar_comet,tag=!going] run function code:spells/mage/interstellar_comet/channel
 execute if entity @e[tag=projectile,tag=interstellar_comet,tag=going] run function code:spells/mage/interstellar_comet/tick
+execute if entity @e[tag=projectile,tag=terra_spikes] run function code:spells/mage/terra_spikes/tick
+execute if entity @e[tag=projectile,tag=terra_spikes_spike] run function code:spells/mage/terra_spikes/tick_spike
 
 execute if entity @e[tag=projectile,tag=wave] run function code:spells/mage/wave/tick
 execute if entity @e[tag=projectile,tag=splashback] run function code:spells/mage/splashback/tick

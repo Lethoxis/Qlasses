@@ -6,6 +6,7 @@ scoreboard objectives add random dummy "Random"
 scoreboard objectives add life dummy "Lifetime"
 
 scoreboard objectives add jump minecraft.custom:minecraft.jump
+scoreboard objectives add shift minecraft.custom:minecraft.sneak_time
 
 ################################# Health #################################
 scoreboard objectives add mhp dummy "Max HP"

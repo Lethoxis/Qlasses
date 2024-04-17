@@ -28,6 +28,7 @@ execute if entity @a[scores={cast=104}] run function code:spells/mage/stonefall_
 execute if entity @a[scores={cast=105}] run function code:spells/mage/earthwall/cast
 execute if entity @a[scores={cast=106}] run function code:spells/mage/gemfire_beam/cast
 execute if entity @a[scores={cast=107}] run function code:spells/mage/interstellar_comet/cast
+execute if entity @a[scores={cast=108}] run function code:spells/mage/terra_spikes/cast
 
 execute if entity @a[scores={cast=200}] run function code:spells/mage/wave/cast
 execute if entity @a[scores={cast=201}] run function code:spells/mage/splashback/cast
