@@ -1,18 +1,18 @@
 
 ##### VFX
 execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run tp @s ^ ^ ^.6
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.0 ^.9 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.3 ^.6 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.6 ^.3 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.9 ^.0 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.6 ^-.3 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.3 ^-.6 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.0 ^-.9 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.3 ^-.6 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.6 ^-.3 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.9 ^.0 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.6 ^.3 ^ .05 .05 .05 0 1 force
-execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.3 ^.6 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.0 ^.9 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.3 ^.6 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.6 ^.3 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.9 ^.0 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.6 ^-.3 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.3 ^-.6 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.0 ^-.9 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.3 ^-.6 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.6 ^-.3 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.9 ^.0 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.6 ^.3 ^ .05 .05 .05 0 1 force
+execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.3 ^.6 ^ .05 .05 .05 0 1 force
 execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run tp @s ^ ^ ^.6
 execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dripping_water ^.0 ^.9 ^ .05 .05 .05 0 1 force
 execute as @e[tag=projectile,tag=diamond_waters_instance] at @s run particle dripping_water ^.3 ^.6 ^ .05 .05 .05 0 1 force

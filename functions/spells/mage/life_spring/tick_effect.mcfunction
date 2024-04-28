@@ -1,5 +1,5 @@
 
-execute as @e[tag=life_spring_effect] at @s run particle dust_color_transition 0 .7 1 1 1 1 1 ^ ^ ^ .06 .06 .06 .02 2
+execute as @e[tag=life_spring_effect] at @s run particle dust_color_transition{from_color:[0.0, .7, 1.0], scale:1, to_color:[1.0, 1.0, 1.0]} ^ ^ ^ .06 .06 .06 .02 2
 
 
 execute as @e[tag=life_spring_effect,scores={life=..8}] at @s run tp @s ^ ^ ^.3 ~ ~3

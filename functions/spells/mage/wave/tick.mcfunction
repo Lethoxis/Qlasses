@@ -1,11 +1,11 @@
 
-execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^ ^.15 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^ ^.15 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle splash ^ ^.05 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle falling_water ^ ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^.6 ^.15 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^.6 ^.15 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle splash ^.6 ^.05 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle falling_water ^.6 ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^-.6 ^.15 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=wave] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-.6 ^.15 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle splash ^-.6 ^.05 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=wave] at @s run particle falling_water ^-.6 ^.5 ^.0 .2 .2 .2 .02 10
 

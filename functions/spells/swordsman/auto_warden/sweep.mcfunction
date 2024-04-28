@@ -11,13 +11,13 @@ execute at @e[tag=auto_warden] run particle sweep_attack ^.5 ^-.1 ^ 0 0 0 0 1
 execute at @e[tag=auto_warden] run particle sweep_attack ^1 ^ ^-.2 0 0 0 0 1
 execute at @e[tag=auto_warden] run particle sweep_attack ^1.5 ^ ^-.4 0 0 0 0 1
 
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^-1.5 ^ ^-.4 .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^-1 ^ ^-.2 .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^-.5 ^-.1 ^ .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^ ^ ^ .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^.5 ^-.1 ^ .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^1 ^ ^-.2 .1 .1 .1 0 10
-execute at @e[tag=auto_warden] run particle dust_color_transition 0 .6 .6 1.6 0 0 0 ^1.5 ^ ^-.4 .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^-1.5 ^ ^-.4 .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^-1 ^ ^-.2 .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^-.5 ^-.1 ^ .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^ ^ ^ .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^.5 ^-.1 ^ .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^1 ^ ^-.2 .1 .1 .1 0 10
+execute at @e[tag=auto_warden] run particle dust_color_transition{from_color:[0.0, .6, .6], scale:1.6, to_color:[0.0, 0.0, 0.0]} ^1.5 ^ ^-.4 .1 .1 .1 0 10
 
 
 ##### Move

@@ -1,7 +1,7 @@
 
 execute as @e[tag=projectile,tag=amethyst_heart] at @s run tp @s ~ ~ ~ ~-8 ~
 execute as @e[tag=amethyst_heart_vfx] at @s run tp @s ~ ~ ~ ~18 ~
-execute as @e[tag=amethyst_heart_vfx] at @s run particle dust .6 .1 .7 1.7 ^ ^ ^1 .3 .1 .3 .02 15
+execute as @e[tag=amethyst_heart_vfx] at @s run particle dust{color:[.6, .1, .7], scale:1.7} ^ ^ ^1 .3 .1 .3 .02 15
 
 ################## Summon shards
 scoreboard players add #amethyst_heart value 1

@@ -5,12 +5,12 @@ scoreboard players add #hellfire_shackles value 1
 execute if score #hellfire_shackles value matches 2.. run scoreboard players set #hellfire_shackles value 0
 
 
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.00 ^.1 ^.00 0 0 0 0 1
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.20 ^.1 ^.17 0 0 0 0 1
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.32 ^.1 ^.33 0 0 0 0 1
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.40 ^.1 ^.50 0 0 0 0 1
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.32 ^.1 ^.67 0 0 0 0 1
-execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^.20 ^.1 ^.83 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.00 ^.1 ^.00 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.20 ^.1 ^.17 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.32 ^.1 ^.33 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.40 ^.1 ^.50 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.32 ^.1 ^.67 0 0 0 0 1
+execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^.20 ^.1 ^.83 0 0 0 0 1
 execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^-.00 ^.1 ^.00 0 0 0 0 1
 execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^-.20 ^.1 ^.17 0 0 0 0 1
 execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^-.32 ^.1 ^.33 0 0 0 0 1
@@ -18,12 +18,12 @@ execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hel
 execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^-.32 ^.1 ^.67 0 0 0 0 1
 execute if score #hellfire_shackles value matches 0 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^-.20 ^.1 ^.83 0 0 0 0 1
 
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.00 ^.1 ^.00 0 0 0 0 1
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.20 ^.1 ^.17 0 0 0 0 1
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.32 ^.1 ^.33 0 0 0 0 1
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.40 ^.1 ^.50 0 0 0 0 1
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.32 ^.1 ^.67 0 0 0 0 1
-execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition 1 .5 0 1.5 1 0 0 ^-.20 ^.1 ^.83 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.00 ^.1 ^.00 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.20 ^.1 ^.17 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.32 ^.1 ^.33 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.40 ^.1 ^.50 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.32 ^.1 ^.67 0 0 0 0 1
+execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle dust_color_transition{from_color:[1.0, .5, 0.0], scale:1.5, to_color:[1.0, 0.0, 0.0]} ^-.20 ^.1 ^.83 0 0 0 0 1
 execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^.00 ^.1 ^.00 0 0 0 0 1
 execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^.20 ^.1 ^.17 0 0 0 0 1
 execute if score #hellfire_shackles value matches 1 as @e[tag=projectile,tag=hellfire_shackles] at @s run particle flame ^.32 ^.1 ^.33 0 0 0 0 1

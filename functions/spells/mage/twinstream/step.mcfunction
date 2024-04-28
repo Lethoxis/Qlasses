@@ -16,7 +16,7 @@ execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^-1 ^1 a
 
 
 execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^-1 ^1 as @e[tag=enemy,distance=..1,sort=nearest,limit=1] at @s run particle splash ~ ~2 ~ .4 .7 .4 0 300
-execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^-1 ^1 as @e[tag=enemy,distance=..1,sort=nearest,limit=1] at @s run particle dust 0 .5 1 1 ~ ~.8 ~ .4 .4 .4 0 50
+execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^-1 ^1 as @e[tag=enemy,distance=..1,sort=nearest,limit=1] at @s run particle dust{color:[0.0, .5, 1.0], scale:1} ~ ~.8 ~ .4 .4 .4 0 50
 execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^ ^1 run playsound entity.zombie.attack_wooden_door ambient @a ~ ~ ~ .2 2
 execute as @e[tag=projectile,tag=twinstream,tag=hit] at @s positioned ^ ^ ^1 run playsound ambient.underwater.enter ambient @a ~ ~ ~ 1.5 2
 

@@ -1,5 +1,5 @@
 
-execute as @e[tag=projectile,tag=bubble_bind] at @s run particle dust_color_transition .2 .8 1 1 1 1 1 ^ ^ ^ 1 1 1 .02 6
+execute as @e[tag=projectile,tag=bubble_bind] at @s run particle dust_color_transition{from_color:[.2, .8, 1.0], scale:1, to_color:[1.0, 1.0, 1.0]} ^ ^ ^ 1 1 1 .02 6
 execute as @e[tag=projectile,tag=bubble_bind] at @s run particle bubble_pop ^ ^ ^ 1 1 1 .02 60
 execute as @e[tag=projectile,tag=bubble_bind] at @s run playsound block.bubble_column.upwards_ambient ambient @a ~ ~ ~ .5 1
 

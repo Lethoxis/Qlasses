@@ -14,52 +14,52 @@ execute as @a[scores={cast=302}] at @s run tag @e[tag=projectile,scores={life=0}
 
 # Place on ground
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 execute as @e[tag=flash,tag=!placed] at @s run tp @s ^ ^ ^.8
-execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition 1 1 .2 1 1 1 1 ~ ~.3 ~ .08 .08 .08 0 10
+execute as @e[tag=flash,tag=!placed] at @s run particle dust_color_transition{from_color:[1.0, 1.0, .2], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~.3 ~ .08 .08 .08 0 10
 execute as @e[tag=flash,tag=!placed] at @s unless block ~ ~ ~ air run tag @s add placed
 
 execute as @e[tag=flash,tag=placed] at @s run tp @s ^ ^ ^-.5

@@ -58,8 +58,8 @@ execute as @e[tag=projectile,tag=notch_lightning] at @s unless block ~ ~ ~ air r
 
 ##### Dmg 
 execute as @e[tag=projectile,tag=notch_lightning] at @s run summon lightning_bolt
-execute as @e[tag=projectile,tag=notch_lightning] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"instant_effect",Radius:4.5f,Duration:10}
-execute as @e[tag=projectile,tag=notch_lightning] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"dust .8 .8 .1 1.1",Radius:4.5f,Duration:10}
+execute as @e[tag=projectile,tag=notch_lightning] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"instant_effect"},Radius:4.5f,Duration:10}
+execute as @e[tag=projectile,tag=notch_lightning] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"dust",color:[.8, .8, .1],scale:1.1},Radius:4.5f,Duration:10}
 execute as @e[tag=projectile,tag=notch_lightning] at @s run scoreboard players add @e[tag=enemy,distance=..4.5] dmg 30
 function code:units/health/damage
 

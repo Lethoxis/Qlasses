@@ -1,7 +1,7 @@
 
-execute as @e[tag=projectile,tag=jolt] at @s run particle dust 1 1 .2 1 ^ ^.1 ^ .05 .05 .05 .02 2
-execute as @e[tag=projectile,tag=jolt] at @s run particle dust 1 1 .2 1 ^ ^.1 ^.25 .05 .05 .05 .02 2
-execute as @e[tag=projectile,tag=jolt] at @s run particle dust 1 1 .2 1 ^ ^.1 ^.5 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=jolt] at @s run particle dust{color:[1.0, 1.0, .2], scale:1} ^ ^.1 ^ .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=jolt] at @s run particle dust{color:[1.0, 1.0, .2], scale:1} ^ ^.1 ^.25 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=jolt] at @s run particle dust{color:[1.0, 1.0, .2], scale:1} ^ ^.1 ^.5 .05 .05 .05 .02 2
 execute as @e[tag=projectile,tag=jolt] at @s run particle instant_effect ^ ^.1 ^ .05 .05 .05 0 1
 execute as @e[tag=projectile,tag=jolt] at @s run particle instant_effect ^ ^.1 ^.25 .05 .05 .05 0 1
 execute as @e[tag=projectile,tag=jolt] at @s run particle instant_effect ^ ^.1 ^.5 .05 .05 .05 0 1

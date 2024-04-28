@@ -1,14 +1,14 @@
 
 ##### VSFX
-execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.1 ^6.3 .1 0 .1 .01 3
-execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.1 ^-6.3 .1 0 .1 .01 3
-execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.4 ^6.3 .0 .4 0 .01 6
-execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.4 ^-6.3 .0 .4 0 .01 6
+execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.1 ^6.3 .1 0 .1 .01 3
+execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.1 ^-6.3 .1 0 .1 .01 3
+execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.4 ^6.3 .0 .4 0 .01 6
+execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.4 ^-6.3 .0 .4 0 .01 6
 execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run tp @s ~ ~ ~ ~9 ~
-execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.1 ^6.3 .1 0 .1 .01 3
-execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.1 ^-6.3 .1 0 .1 .01 3
-execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.4 ^6.3 .0 .4 0 .01 6
-execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust .5 .25 .1 1.5 ^ ^.4 ^-6.3 .0 .4 0 .01 6
+execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.1 ^6.3 .1 0 .1 .01 3
+execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.1 ^-6.3 .1 0 .1 .01 3
+execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.4 ^6.3 .0 .4 0 .01 6
+execute as @e[tag=stonefall_deluge_vfx,scores={life=170..}] at @s run particle dust{color:[.5, .25, .1], scale:1.5} ^ ^.4 ^-6.3 .0 .4 0 .01 6
 execute as @e[tag=stonefall_deluge_vfx,scores={life=1..}] at @s run tp @s ~ ~ ~ ~9 ~
 
 

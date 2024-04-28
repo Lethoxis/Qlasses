@@ -1,35 +1,35 @@
 
 ################ Repulse enemies
 
-execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^ ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^ ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle splash ^ ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle falling_water ^ ^.5 ^.0 .2 .2 .2 .02 10
 
-execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^.6 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^.6 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle splash ^.6 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle falling_water ^.6 ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^-.6 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-.6 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle splash ^-.6 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse] at @s run particle falling_water ^-.6 ^.5 ^.0 .2 .2 .2 .02 10
 
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^1.2 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^1.2 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle splash ^1.2 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle falling_water ^1.2 ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^-1.2 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-1.2 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle splash ^-1.2 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=2..}] at @s run particle falling_water ^-1.2 ^.5 ^.0 .2 .2 .2 .02 10
 
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^1.8 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^1.8 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle splash ^1.8 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle falling_water ^1.8 ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^-1.8 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-1.8 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle splash ^-1.8 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=3..}] at @s run particle falling_water ^-1.8 ^.5 ^.0 .2 .2 .2 .02 10
 
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^2.2 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^2.2 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle splash ^2.2 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle falling_water ^2.2 ^.5 ^.0 .2 .2 .2 .02 10
-execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^-2.2 ^.25 ^1 .2 .2 .2 .02 10
+execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-2.2 ^.25 ^1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle splash ^-2.2 ^.2 ^.1 .2 .2 .2 .02 10
 execute as @e[tag=projectile,tag=splashback_repulse,scores={life=4..}] at @s run particle falling_water ^-2.2 ^.5 ^.0 .2 .2 .2 .02 10
 
@@ -64,7 +64,7 @@ kill @e[tag=projectile,tag=splashback_repulse,scores={life=5..}]
 execute as @e[tag=projectile,tag=splashback] at @s positioned ^ ^ ^-.45 run tp @s ~ ~ ~ ~ ~-4
 execute as @e[tag=projectile,tag=splashback] at @s run tp @p ~ ~ ~
 
-execute as @e[tag=projectile,tag=splashback] at @s run particle dust_color_transition .5 .5 1 1.3 1 1 1 ~ ~.5 ~ .2 .2 .2 0 2
+execute as @e[tag=projectile,tag=splashback] at @s run particle dust_color_transition{from_color:[.5, .5, 1.0], scale:1.3, to_color:[1.0, 1.0, 1.0]} ~ ~.5 ~ .2 .2 .2 0 2
 execute as @e[tag=projectile,tag=splashback] at @s run particle white_smoke ~ ~.5 ~ .2 .2 .2 0 2
 
 

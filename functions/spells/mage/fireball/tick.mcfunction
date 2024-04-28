@@ -1,5 +1,5 @@
 
-execute as @e[tag=projectile,tag=fireball] at @s run particle dust .7 .3 0 .7 ^ ^.1 ^-.75 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=fireball] at @s run particle dust{color:[.7, .3, 0.0], scale:.7} ^ ^.1 ^-.75 .05 .05 .05 .02 2
 execute as @e[tag=projectile,tag=fireball] at @s run particle smoke ^ ^.1 ^ .05 .05 .05 .02 2
 
 execute as @e[tag=projectile,tag=fireball] at @s run tp @s ^ ^ ^1.5

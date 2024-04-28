@@ -10,10 +10,10 @@ tag @e[tag=!bubble_bind_particled,scores={bubble_binded=2..}] add bubble_bind_pa
 
 
 execute as @e[tag=bubble_bind_particle] at @s run tp @s ~ ~ ~ ~17 ~
-execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition 0 .6 1 .8 1 1 1 ^ ^.7 ^.8 0 .3 0 0 5
-execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition 0 .6 1 .8 1 1 1 ^ ^.7 ^-.8 0 .3 0 0 5
-execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition 0 .6 1 .8 1 1 1 ^.8 ^.7 ^ 0 .3 0 0 5
-execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition 0 .6 1 .8 1 1 1 ^-.8 ^.7 ^ 0 .3 0 0 5
+execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition{from_color:[0.0, .6, 1.0], scale:.8, to_color:[1.0, 1.0, 1.0]} ^ ^.7 ^.8 0 .3 0 0 5
+execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition{from_color:[0.0, .6, 1.0], scale:.8, to_color:[1.0, 1.0, 1.0]} ^ ^.7 ^-.8 0 .3 0 0 5
+execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition{from_color:[0.0, .6, 1.0], scale:.8, to_color:[1.0, 1.0, 1.0]} ^.8 ^.7 ^ 0 .3 0 0 5
+execute as @e[tag=bubble_bind_particle] at @s run particle dust_color_transition{from_color:[0.0, .6, 1.0], scale:.8, to_color:[1.0, 1.0, 1.0]} ^-.8 ^.7 ^ 0 .3 0 0 5
 
 
 

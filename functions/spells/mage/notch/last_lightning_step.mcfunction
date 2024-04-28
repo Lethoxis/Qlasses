@@ -23,9 +23,9 @@ execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run play
 execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run playsound entity.wind_charge.wind_burst ambient @a ~ ~ ~ 2 0
 execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run playsound entity.generic.explode ambient @a ~ ~ ~ 1 0
 execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon lightning_bolt
-execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"instant_effect",Radius:6.5f,Duration:17}
-execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"dust .8 .8 .1 1.4",Radius:6.5f,Duration:17}
-execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"cloud",Radius:6.5f,Duration:17}
+execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"instant_effect"},Radius:6.5f,Duration:17}
+execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"dust",color:[.8, .8, .1],scale:1.4},Radius:6.5f,Duration:17}
+execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run summon area_effect_cloud ~ ~ ~ {Particle:{type:"cloud"},Radius:6.5f,Duration:17}
 execute as @e[tag=projectile,tag=last_notch_lightning,tag=placed] at @s run scoreboard players add @e[tag=enemy,distance=..6.5] dmg 50
 execute if entity @e[tag=projectile,tag=last_notch_lightning,tag=placed] run function code:units/health/damage
 

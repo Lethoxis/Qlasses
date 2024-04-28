@@ -1,19 +1,19 @@
 
 ##### Charging
-execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9 ~ {Particle:"campfire_cosy_smoke",Radius:1f,RadiusPerTick:0.1f,Duration:55}
-execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9.4 ~ {Particle:"campfire_cosy_smoke",Radius:1f,RadiusPerTick:0.1f,Duration:55}
-execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9.4 ~ {Particle:"falling_water",Radius:1.1f,RadiusPerTick:0.1f,Duration:55}
+execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9 ~ {Particle:{type:"campfire_cosy_smoke"},Radius:1f,RadiusPerTick:0.1f,Duration:55}
+execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9.4 ~ {Particle:{type:"campfire_cosy_smoke"},Radius:1f,RadiusPerTick:0.1f,Duration:55}
+execute as @e[tag=projectile,tag=thundersurge,scores={life=1}] at @s run summon area_effect_cloud ~ ~9.4 ~ {Particle:{type:"falling_water"},Radius:1.1f,RadiusPerTick:0.1f,Duration:55}
 
 
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^ ^.2 ^6.5 .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^ ^.2 ^-6.5 .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^6.5 ^.2 ^ .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^-6.5 ^.2 ^ .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^ ^.2 ^6.5 .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^ ^.2 ^-6.5 .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^6.5 ^.2 ^ .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^-6.5 ^.2 ^ .04 .04 .04 .01 2
 execute as @e[tag=projectile,tag=thundersurge] at @s run tp @s ~ ~ ~ ~12 ~
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^ ^.2 ^6.5 .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^ ^.2 ^-6.5 .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^6.5 ^.2 ^ .04 .04 .04 .01 2
-execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition 1 1 0 2 1 1 1 ^-6.5 ^.2 ^ .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^ ^.2 ^6.5 .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^ ^.2 ^-6.5 .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^6.5 ^.2 ^ .04 .04 .04 .01 2
+execute as @e[tag=projectile,tag=thundersurge] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:2, to_color:[1.0, 1.0, 1.0]} ^-6.5 ^.2 ^ .04 .04 .04 .01 2
 execute as @e[tag=projectile,tag=thundersurge] at @s run tp @s ~ ~ ~ ~12 ~
 
 execute as @e[tag=projectile,tag=thundersurge] at @s run particle instant_effect ^ ^.2 ^ 2.5 0 2.5 .01 10

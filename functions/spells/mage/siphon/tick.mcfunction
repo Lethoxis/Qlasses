@@ -1,11 +1,11 @@
 
 ##### VSFX
-execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle item blue_candle ^ ^.2 ^ .5 .3 .5 .2 20
+execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle item{item:"blue_candle"} ^ ^.2 ^ .5 .3 .5 .2 20
 
 execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle splash ^ ^ ^ 2.5 0 2.5 .01 30
 
-execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle dust_color_transition .2 .6 1 1.5 0 0 1 ^ ^.15 ^1.5 .1 0 .1 .01 2
-execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle dust_color_transition .2 .6 1 1.5 0 0 1 ^ ^.15 ^-1.5 .1 0 .1 .01 2
+execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle dust_color_transition{from_color:[.2, .6, 1.0], scale:1.5, to_color:[0.0, 0.0, 1.0]} ^ ^.15 ^1.5 .1 0 .1 .01 2
+execute as @e[tag=projectile,tag=siphon,scores={life=1..140}] at @s run particle dust_color_transition{from_color:[.2, .6, 1.0], scale:1.5, to_color:[0.0, 0.0, 1.0]} ^ ^.15 ^-1.5 .1 0 .1 .01 2
 execute as @e[tag=projectile,tag=siphon,scores={life=1..}] at @s run tp @s ~ ~ ~ ~15 ~
 
 

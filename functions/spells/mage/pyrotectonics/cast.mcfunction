@@ -6,5 +6,5 @@ execute as @a[scores={cast=4}] at @s run tp @e[tag=projectile,scores={life=0},so
 
 execute as @a[scores={cast=4}] at @s run playsound entity.blaze.hurt ambient @a ~ ~ ~ .4 0
 execute as @a[scores={cast=4}] at @s run playsound entity.blaze.hurt ambient @a ~ ~ ~ .4 .7
-execute as @a[scores={cast=4}] at @s run particle dust_color_transition 1 0 0 2 1 .7 0 ~ ~.1 ~ 1.2 0 1.2 0 250
+execute as @a[scores={cast=4}] at @s run particle dust_color_transition{from_color:[1.0, 0.0, 0.0], scale:2, to_color:[1.0, .7, 0.0]} ~ ~.1 ~ 1.2 0 1.2 0 250
 execute as @a[scores={cast=4}] at @s run particle lava ~ ~.1 ~ 1.2 0 1.2 0 80

@@ -12,8 +12,8 @@ execute as @a[scores={cast=101}] at @s run execute as @e[tag=projectile,scores={
 
 
 ######## VSFX
-execute as @a[scores={cast=101}] at @s run particle dust .6 .3 .7 1 ~ ~7 ~ .1 3 .1 .3 200
-execute as @a[scores={cast=101}] at @s run particle dust 1 .9 .2 1 ~ ~7 ~ .1 3 .1 .3 200
+execute as @a[scores={cast=101}] at @s run particle dust{color:[.6, .3, .7], scale:1} ~ ~7 ~ .1 3 .1 .3 200
+execute as @a[scores={cast=101}] at @s run particle dust{color:[1.0, .9, .2], scale:1} ~ ~7 ~ .1 3 .1 .3 200
 execute as @a[scores={cast=101}] at @s run particle cloud ~ ~7 ~ .02 3 .02 .02 80
 
 execute as @a[scores={cast=101}] at @s run playsound entity.lightning_bolt.thunder ambient @a ~ ~ ~ .8 2

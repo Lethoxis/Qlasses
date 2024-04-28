@@ -18,7 +18,7 @@ execute as @e[tag=projectile,tag=diamond_waters,scores={life=..35,random=2}] at 
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=..35,random=3}] at @s as @e[tag=diamond_waters_vfx,scores={life=0},sort=nearest,limit=1] at @s rotated as @e[tag=diamond_waters,sort=nearest,limit=1] run tp @s ^ ^ ^-.4
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=..35,random=4}] at @s as @e[tag=diamond_waters_vfx,scores={life=0},sort=nearest,limit=1] at @s rotated as @e[tag=diamond_waters,sort=nearest,limit=1] run tp @s ^ ^ ^-1
 
-execute as @e[tag=diamond_waters_vfx] at @s run particle dust_color_transition 0 1 1 1.6 0 0 0 ~ ~ ~ 0 0 0 0 1
+execute as @e[tag=diamond_waters_vfx] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1.6, to_color:[0.0, 0.0, 0.0]} ~ ~ ~ 0 0 0 0 1
 execute as @e[tag=diamond_waters_vfx] at @s facing entity @e[tag=diamond_waters,sort=nearest,limit=1] feet run tp @s ^ ^ ^.2
 execute as @e[tag=diamond_waters_vfx] at @s if entity @e[tag=diamond_waters,distance=..0.4] run kill @s
 
@@ -34,7 +34,7 @@ execute as @e[tag=projectile,tag=diamond_waters,scores={life=23..32}] at @s run 
 
 
 
-execute as @e[tag=projectile,tag=diamond_waters,scores={life=48}] at @s run particle item blue_wool ^ ^.15 ^ .2 .2 .2 .25 200
+execute as @e[tag=projectile,tag=diamond_waters,scores={life=48}] at @s run particle item{item:"blue_wool"} ^ ^.15 ^ .2 .2 .2 .25 200
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=48}] at @s run playsound item.trident.return ambient @a ~ ~ ~ 1.5 0
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=48}] at @s run playsound entity.zombie.converted_to_drowned ambient @a ~ ~ ~ 1 .75
 execute as @e[tag=projectile,tag=diamond_waters,scores={life=48}] at @s run playsound item.crossbow.shoot ambient @a ~ ~ ~ 2 0
@@ -58,7 +58,7 @@ execute as @e[tag=projectile,tag=diamond_waters,scores={life=48..}] at @s run pl
 scoreboard players add @e[tag=diamond_waters_hit] dmg 6
 execute as @e[tag=diamond_waters_hit] at @s run effect give @s slowness 2 1 true
 
-execute as @e[tag=diamond_waters_hit] at @s run particle dust 0 .5 1 1 ~ ~1.5 ~ .4 .8 .4 0 30
+execute as @e[tag=diamond_waters_hit] at @s run particle dust{color:[0.0, .5, 1.0], scale:1} ~ ~1.5 ~ .4 .8 .4 0 30
 execute as @e[tag=diamond_waters_hit] at @s run playsound entity.player.hurt_drown ambient @a ~ ~ ~ .5 1.2
 
 execute if entity @e[tag=diamond_waters_hit] run function code:units/health/damage

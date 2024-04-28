@@ -10,7 +10,7 @@ execute as @e[tag=projectile,tag=twinstream,tag=left,scores={life=..20}] at @s a
 execute as @e[tag=projectile,tag=twinstream,tag=right,scores={life=..20}] at @s at @a[tag=channeling,sort=nearest,limit=1] positioned ~ ~1.35 ~ run tp @s ^-.65 ^ ^ ~ 0
 
 
-execute as @e[tag=projectile,tag=twinstream,scores={life=20}] at @s run particle item blue_wool ^ ^.15 ^ .05 .05 .05 .2 20
+execute as @e[tag=projectile,tag=twinstream,scores={life=20}] at @s run particle item{item:"blue_wool"} ^ ^.15 ^ .05 .05 .05 .2 20
 execute as @e[tag=projectile,tag=twinstream,scores={life=20}] at @s run playsound item.trident.return ambient @a ~ ~ ~ 1 2
 execute as @e[tag=projectile,tag=twinstream,scores={life=20}] at @s run playsound entity.zombie.converted_to_drowned ambient @a ~ ~ ~ .8
 execute as @e[tag=projectile,tag=twinstream,scores={life=20}] at @s run playsound entity.zombie.attack_wooden_door ambient @a ~ ~ ~ .4 2
@@ -20,24 +20,24 @@ execute as @e[tag=projectile,tag=twinstream,tag=left,scores={life=20}] at @s run
 ##### Shoot
 function code:spells/mage/twinstream/step
 
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.30 ^.00 ^.0 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.30 ^.00 ^.0 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.21 ^.21 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.21 ^.21 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.00 ^.3 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.00 ^.3 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.21 ^.21 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.21 ^.21 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
 
 function code:spells/mage/twinstream/step
 
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.30 ^.00 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.30 ^.00 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^-.21 ^-.21 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^-.21 ^-.21 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.00 ^-.30 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.00 ^-.30 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
-execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition 0 1 1 1 0 0 1 ^.21 ^-.21 ^ 0 0 0 0 1
+execute as @e[tag=projectile,tag=twinstream] at @s run particle dust_color_transition{from_color:[0.0, 1.0, 1.0], scale:1, to_color:[0.0, 0.0, 1.0]} ^.21 ^-.21 ^ 0 0 0 0 1
 execute as @e[tag=projectile,tag=twinstream,scores={life=20..}] at @s run tp @s ^ ^ ^.3
 
 

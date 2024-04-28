@@ -1,6 +1,6 @@
 
-execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .6 -1 .7 .5 ^ ^ ^ .02 .02 .02 0 2
-execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust .6 -1 .7 .5 ^ ^ ^-.5 .02 .02 .02 0 2
+execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust{color:[.6, -1.0, .7], scale:.5} ^ ^ ^ .02 .02 .02 0 2
+execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run particle dust{color:[.6, -1.0, .7], scale:.5} ^ ^ ^-.5 .02 .02 .02 0 2
 execute as @e[tag=projectile,tag=amethyst_storm_shard] at @s run tp @s ^ ^ ^1
 
 
@@ -16,8 +16,8 @@ execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit] at @s positioned 
 execute if entity @e[tag=projectile,tag=amethyst_storm_shard,tag=hit] run function code:units/health/damage
 
 
-execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit,tag=!hitwall] at @s positioned ^ ^ ^1 run particle item large_amethyst_bud ~ ~ ~ .5 .5 .5 .3 40
-execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit,tag=hitwall] at @s positioned ^ ^ ^1 run particle item large_amethyst_bud ~ ~ ~ .4 .4 .4 .1 20
+execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit,tag=!hitwall] at @s positioned ^ ^ ^1 run particle item{item:"large_amethyst_bud"} ~ ~ ~ .5 .5 .5 .3 40
+execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit,tag=hitwall] at @s positioned ^ ^ ^1 run particle item{item:"large_amethyst_bud"} ~ ~ ~ .4 .4 .4 .1 20
 execute as @e[tag=projectile,tag=amethyst_storm_shard,tag=hit] at @s positioned ^ ^ ^1 run playsound block.amethyst_block.break ambient @a ~ ~ ~ 1.5 1.4
 kill @e[tag=projectile,tag=amethyst_storm_shard,tag=hit]
 

@@ -1,24 +1,24 @@
 
 
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition 1 1 1 1 .8 .8 1 ^1 ^5 ^1 .5 .3 .5 .02 20
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition .6 .6 1 1 .1 .1 1 ^1 ^2.5 ^-1 .7 1.4 .7 .02 100
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.8, .8, 1.0]} ^1 ^5 ^1 .5 .3 .5 .02 20
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[.6, .6, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^1 ^2.5 ^-1 .7 1.4 .7 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle falling_water ^1 ^.3 ^.5 .5 1 .5 .02 50
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle splash ^1.5 ^.5 ^1 1 1 1 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dripping_water ^1 ^.1 ^-1 .65 0 .65 .02 10
 
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition 1 1 1 1 .8 .8 1 ^-1 ^5 ^1 .5 .3 .5 .02 20
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition .6 .6 1 1 .1 .1 1 ^-1 ^2.5 ^-1 .7 1.4 .7 .02 100
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.8, .8, 1.0]} ^-1 ^5 ^1 .5 .3 .5 .02 20
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[.6, .6, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-1 ^2.5 ^-1 .7 1.4 .7 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle falling_water ^-1 ^.3 ^.5 .5 1 .5 .02 50
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle splash ^-1.5 ^.5 ^1 1 1 1 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dripping_water ^-1 ^.1 ^-1 .65 0 .65 .02 10
 
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition 1 1 1 1 .8 .8 1 ^3 ^5 ^1 .5 .3 .5 .02 20
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition .6 .6 1 1 .1 .1 1 ^3 ^2.5 ^-1 .7 1.4 .7 .02 100
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.8, .8, 1.0]} ^3 ^5 ^1 .5 .3 .5 .02 20
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[.6, .6, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^3 ^2.5 ^-1 .7 1.4 .7 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle falling_water ^3 ^.3 ^.5 .5 1 .5 .02 50
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dripping_water ^3 ^.1 ^-1 .65 0 .65 .02 10
 
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition 1 1 1 1 .8 .8 1 ^-3 ^5 ^1 .5 .3 .5 .02 20
-execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition .6 .6 1 1 .1 .1 1 ^-3 ^2.5 ^-1 .7 1.4 .7 .02 100
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.8, .8, 1.0]} ^-3 ^5 ^1 .5 .3 .5 .02 20
+execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dust_color_transition{from_color:[.6, .6, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^-3 ^2.5 ^-1 .7 1.4 .7 .02 100
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle falling_water ^-3 ^.3 ^.5 .5 1 .5 .02 50
 execute as @e[tag=projectile,tag=tsunami,scores={life=0..}] at @s run particle dripping_water ^-3 ^.1 ^-1 .65 0 .65 .02 10
 

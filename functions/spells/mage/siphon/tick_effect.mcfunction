@@ -1,5 +1,5 @@
 
-execute as @e[tag=siphon_effect] at @s run particle dust_color_transition 1 1 1 1 .1 .1 1 ^ ^.05 ^ .06 .06 .06 .02 3
+execute as @e[tag=siphon_effect] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, 1.0]} ^ ^.05 ^ .06 .06 .06 .02 3
 execute as @e[tag=siphon_effect] at @s run particle falling_water ^ ^.05 ^ .06 .06 .06 .02 5
 
 

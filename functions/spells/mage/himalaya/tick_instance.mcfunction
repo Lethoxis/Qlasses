@@ -21,7 +21,7 @@ execute if entity @e[tag=himalaya_instance,tag=!himalaya_spike,scores={life=1}] 
 ##### Up
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=..2}] at @s run playsound block.dripstone_block.place ambient @a ~ ~ ~ 1 .7
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=..2}] at @s run playsound block.amethyst_block.chime ambient @a ~ ~ ~ 1
-execute as @e[tag=projectile,tag=himalaya_instance,scores={life=..5}] at @s run particle block pointed_dripstone ~ ~ ~ .4 1 .4 .01 20
+execute as @e[tag=projectile,tag=himalaya_instance,scores={life=..5}] at @s run particle block{block_state:"pointed_dripstone"} ~ ~ ~ .4 1 .4 .01 20
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=..5}] at @s run tp @s ~ ~.5 ~
 
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=5}] at @s run fill ^ ^-3 ^-1 ^ ^2 ^-1 barrier keep
@@ -34,7 +34,7 @@ execute as @e[tag=himalaya_instance,scores={life=..5}] at @s positioned ^-1 ^.3 
 
 
 
-execute as @e[tag=projectile,tag=himalaya_instance,tag=!himalaya_spike,scores={life=5..}] at @s run particle dust_color_transition .1 .5 1 1 1 1 1 ~ ~ ~ .5 1.5 .5 0 3
+execute as @e[tag=projectile,tag=himalaya_instance,tag=!himalaya_spike,scores={life=5..}] at @s run particle dust_color_transition{from_color:[.1, .5, 1.0], scale:1, to_color:[1.0, 1.0, 1.0]} ~ ~ ~ .5 1.5 .5 0 3
 
 
 ##### Down
@@ -42,5 +42,5 @@ execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s ru
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s run fill ^ ^-3 ^ ^ ^2 ^ air replace barrier
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s run fill ^ ^-3 ^1 ^ ^2 ^1 air replace barrier
 execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s run playsound block.dripstone_block.break ambient @a ~ ~ ~ .8 0
-execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s run particle block pointed_dripstone ~ ~-1 ~ .6 1.2 .6 .01 40
+execute as @e[tag=projectile,tag=himalaya_instance,scores={life=200..}] at @s run particle block{block_state:"pointed_dripstone"} ~ ~-1 ~ .6 1.2 .6 .01 40
 kill @e[tag=projectile,tag=himalaya_instance,scores={life=200..}]

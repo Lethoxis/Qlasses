@@ -1,5 +1,5 @@
 
-execute as @e[tag=projectile,tag=emberling] at @s run particle dust_color_transition 1 0 0 2 1 1 0 ~ ~ ~ .02 .02 .02 0 2 force
+execute as @e[tag=projectile,tag=emberling] at @s run particle dust_color_transition{from_color:[1.0, 0.0, 0.0], scale:2, to_color:[1.0, 1.0, 0.0]} ~ ~ ~ .02 .02 .02 0 2 force
 execute as @e[tag=projectile,tag=emberling] at @s run particle small_flame ~ ~ ~ .05 .05 .05 0.01 5 force
 execute as @e[tag=projectile,tag=emberling,scores={value=..0}] at @s run particle firework ~ ~ ~ .05 .05 .05 0.03 5 force
 

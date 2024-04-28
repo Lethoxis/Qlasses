@@ -1,6 +1,6 @@
 
-execute as @e[tag=projectile,tag=geode_bomb] at @s run particle dust_color_transition 1 1 1 1 .1 .1 .1 ^ ^ ^ .1 .1 .1 .02 5
-execute as @e[tag=projectile,tag=geode_bomb] at @s run particle item calcite ^ ^ ^ .1 .1 .1 .02 1
+execute as @e[tag=projectile,tag=geode_bomb] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 1.0], scale:1, to_color:[.1, .1, .1]} ^ ^ ^ .1 .1 .1 .02 5
+execute as @e[tag=projectile,tag=geode_bomb] at @s run particle item{item:"calcite"} ^ ^ ^ .1 .1 .1 .02 1
 
 execute as @e[tag=projectile,tag=geode_bomb] at @s run tp @s ^ ^ ^.35
 execute as @e[tag=projectile,tag=geode_bomb,x_rotation=-90..40,scores={life=..10}] at @s run tp @s ^ ^ ^.55

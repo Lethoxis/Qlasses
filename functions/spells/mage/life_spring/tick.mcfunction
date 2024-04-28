@@ -1,10 +1,10 @@
 
 ##### VSFX
-execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run summon area_effect_cloud ~ ~.03 ~ {Particle:"falling_water",Duration:2s,Radius:6}
+execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run summon area_effect_cloud ~ ~.03 ~ {Particle:{type:"falling_water"},Duration:2s,Radius:6}
 
 execute as @e[tag=projectile,tag=life_spring,scores={life=1..160}] at @s run particle cloud ^ ^.1 ^ .15 0 .15 .01 4
-execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run particle dust_color_transition .2 .6 1 1.5 0 1 1 ^ ^.15 ^6 .1 0 .1 .01 2
-execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run particle dust_color_transition .2 .6 1 1.5 0 1 1 ^ ^.15 ^-6 .1 0 .1 .01 2
+execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run particle dust_color_transition{from_color:[.2, .6, 1.0], scale:1.5, to_color:[0.0, 1.0, 1.0]} ^ ^.15 ^6 .1 0 .1 .01 2
+execute as @e[tag=projectile,tag=life_spring,scores={life=1..170}] at @s run particle dust_color_transition{from_color:[.2, .6, 1.0], scale:1.5, to_color:[0.0, 1.0, 1.0]} ^ ^.15 ^-6 .1 0 .1 .01 2
 execute as @e[tag=projectile,tag=life_spring,scores={life=1..}] at @s run tp @s ~ ~ ~ ~9 ~
 
 

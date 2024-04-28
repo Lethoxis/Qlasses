@@ -2,11 +2,11 @@
 execute as @e[tag=projectile,tag=hellfire_shackles_effect,x_rotation=30..90,scores={value=-1}] run scoreboard players set @s value 1
 execute as @e[tag=projectile,tag=hellfire_shackles_effect,x_rotation=-90..-30,scores={value=1}] run scoreboard players set @s value -1
 
-execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition 1 .4 0 1.8 1 1 0 ^ ^ ^4 .05 .05 .05 .02 2
-execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition 1 1 0 1.8 1 0 0 ^ ^ ^-4 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition{from_color:[1.0, .4, 0.0], scale:1.8, to_color:[1.0, 1.0, 0.0]} ^ ^ ^4 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:1.8, to_color:[1.0, 0.0, 0.0]} ^ ^ ^-4 .05 .05 .05 .02 2
 execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run tp @s ~ ~ ~ ~4.5 ~
-execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition 1 .4 0 1.8 1 1 0 ^ ^ ^4 .05 .05 .05 .02 2
-execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition 1 1 0 1.8 1 0 0 ^ ^ ^-4 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition{from_color:[1.0, .4, 0.0], scale:1.8, to_color:[1.0, 1.0, 0.0]} ^ ^ ^4 .05 .05 .05 .02 2
+execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run particle dust_color_transition{from_color:[1.0, 1.0, 0.0], scale:1.8, to_color:[1.0, 0.0, 0.0]} ^ ^ ^-4 .05 .05 .05 .02 2
 execute as @e[tag=projectile,tag=hellfire_shackles_effect] at @s run tp @s ~ ~ ~ ~4.5 ~
 
 
