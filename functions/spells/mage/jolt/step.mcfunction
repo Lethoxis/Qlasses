@@ -25,7 +25,8 @@ execute if entity @e[tag=projectile,tag=jolt,tag=hit,tag=!hitwall] run function 
 
 
 
-execute as @e[tag=projectile,tag=jolt,tag=hit] at @s run playsound block.gravel.break ambient @a ~ ~ ~ 1 1.8
+execute as @e[tag=projectile,tag=jolt,tag=hit] at @s run playsound entity.allay.hurt ambient @a ~ ~ ~ .2 2
+execute as @e[tag=projectile,tag=jolt,tag=hit] at @s run playsound entity.bee.sting ambient @a ~ ~ ~ 1 1.5
 scoreboard players remove @e[tag=projectile,tag=jolt,tag=hit] value 1
 
 

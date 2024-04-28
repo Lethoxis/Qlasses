@@ -1,5 +1,6 @@
 
 ########################## Tick ##########################
+## Mage
 execute if entity @e[tag=projectile,tag=fireball] run function code:spells/mage/fireball/tick
 execute if entity @e[tag=projectile,tag=volcano] run function code:spells/mage/volcano/tick
 execute if entity @e[tag=projectile,tag=campfire] run function code:spells/mage/campfire/tick
@@ -23,6 +24,11 @@ execute if entity @e[tag=projectile,tag=interstellar_comet,tag=!going] run funct
 execute if entity @e[tag=projectile,tag=interstellar_comet,tag=going] run function code:spells/mage/interstellar_comet/tick
 execute if entity @e[tag=projectile,tag=terra_spikes] run function code:spells/mage/terra_spikes/tick
 execute if entity @e[tag=projectile,tag=terra_spikes_spike] run function code:spells/mage/terra_spikes/tick_spike
+execute if entity @e[tag=projectile,tag=himalaya] run function code:spells/mage/himalaya/tick
+execute if entity @e[tag=projectile,tag=himalaya_instance] run function code:spells/mage/himalaya/tick_instance
+execute if entity @e[tag=projectile,tag=vesuvius] run function code:spells/mage/vesuvius/tick
+execute if entity @e[tag=projectile,tag=vesuvius_instance] run function code:spells/mage/vesuvius/tick_instance
+execute if entity @e[tag=projectile,tag=fuji] run function code:spells/mage/fuji/tick
 
 execute if entity @e[tag=projectile,tag=wave] run function code:spells/mage/wave/tick
 execute if entity @e[tag=projectile,tag=splashback] run function code:spells/mage/splashback/tick
@@ -43,6 +49,13 @@ execute if entity @e[tag=projectile,tag=diamond_waters_instance] run function co
 execute if entity @e[tag=projectile,tag=jolt] run function code:spells/mage/jolt/tick
 execute if entity @e[tag=projectile,tag=thundersurge] run function code:spells/mage/thundersurge/tick
 execute if entity @e[tag=projectile,tag=blitz_dash] run function code:spells/mage/blitz_dash/tick
+execute if entity @e[scores={notch=1..}] run function code:spells/mage/notch/tick
+execute if entity @e[tag=last_notch_lightning] run function code:spells/mage/notch/last_lightning_step
+
+
+## Swordsman
+execute if entity @e[tag=projectile,tag=enchanted_path] run function code:spells/swordsman/enchanted_path/tick
+execute if entity @e[tag=!projectile,tag=enchanted_path] run function code:spells/swordsman/enchanted_path/tick_carpet
 
 
 ########################## CD ##########################

@@ -37,9 +37,6 @@ execute as @e[tag=stonefall_deluge_vfx,scores={random=6}] at @s run tp @e[tag=pr
 
 
 
-execute as @e[tag=stonefall_deluge_vfx,scores={random=1..6}] run tag @s remove spawnProjectile
-
-
 
 ###### Death
 kill @e[tag=stonefall_deluge,scores={life=230..}]

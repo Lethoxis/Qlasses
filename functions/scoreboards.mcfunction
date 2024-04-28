@@ -6,7 +6,7 @@ scoreboard objectives add random dummy "Random"
 scoreboard objectives add life dummy "Lifetime"
 
 scoreboard objectives add jump minecraft.custom:minecraft.jump
-scoreboard objectives add shift minecraft.custom:minecraft.sneak_time
+scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 
 ################################# Health #################################
 scoreboard objectives add mhp dummy "Max HP"
@@ -49,6 +49,7 @@ scoreboard objectives add lc dummy "Left click"
 ## Misc
 scoreboard objectives add aquabomb dummy "Aquabomb"
 scoreboard objectives add bubble_binded dummy "Bubble bind"
+scoreboard objectives add notch dummy "Notch"
 
 
 ################################# Teams #################################

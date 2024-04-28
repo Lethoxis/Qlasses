@@ -11,4 +11,4 @@ execute as @a[scores={cast=300}] at @s run data merge entity @e[tag=projectile,s
 scoreboard players set @e[tag=projectile,tag=jolt,scores={life=0}] value 3
 
 execute as @a[scores={cast=300}] at @s run playsound block.copper_bulb.break ambient @a ~ ~ ~ 1.5 2
-execute as @a[scores={cast=300}] at @s run playsound block.sand.step ambient @a ~ ~ ~ 1.5 2
+execute as @a[scores={cast=300}] at @s run playsound entity.allay.hurt ambient @a ~ ~ ~ 1 2

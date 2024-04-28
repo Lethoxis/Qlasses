@@ -15,7 +15,7 @@ execute if entity @e[type=text_display,tag=damage] run function code:units/healt
 ################################################# Spells #################################################
 function code:spells/tick
 
-execute as @a[tag=!channeling,scores={lc=1..},nbt={SelectedItemSlot:0}] unless score @s autocd matches 1.. run scoreboard players operation @s cast = @s auto
+execute as @a[tag=!channeling,scores={lc=1..}] unless score @s autocd matches 1.. run scoreboard players operation @s cast = @s auto
 execute as @a[tag=!channeling,scores={rc=1..},nbt={SelectedItemSlot:0}] unless score @s spell1cd matches 1.. run scoreboard players operation @s cast = @s spell1
 execute as @a[tag=!channeling,scores={rc=1..},nbt={SelectedItemSlot:1}] unless score @s spell2cd matches 1.. run scoreboard players operation @s cast = @s spell2
 execute as @a[tag=!channeling,scores={rc=1..},nbt={SelectedItemSlot:2}] unless score @s spell3cd matches 1.. run scoreboard players operation @s cast = @s spell3
